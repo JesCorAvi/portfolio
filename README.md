@@ -1,4 +1,4 @@
-# Jesús Cordero Ávila - Portfolio.
+# Jesús Cordero Ávila - Portfolio
 
 [English](#english) | [Español](#español)
 
