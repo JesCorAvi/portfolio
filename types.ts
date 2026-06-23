@@ -1,4 +1,3 @@
-
 export interface ProjectLink {
   github?: string;
   live?: string;
@@ -8,7 +7,7 @@ export interface ProjectLink {
 
 export interface Project {
   title: string;
-  description: string;
+  descriptionKey: string;
   imageUrl: string;
   tags: string[];
   links: ProjectLink;

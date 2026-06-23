@@ -10,7 +10,7 @@ export const SKILLS = [
 export const PROJECTS: Project[] = [
   {
     title: 'Cthulhu Character Creator',
-    description: 'A web-based tool to easily create and manage characters for the Cthulhu tabletop RPG.',
+    descriptionKey: 'cthulhu',
     imageUrl: 'https://i.imgur.com/mLeyJo9.png',
     tags: ['Web App', 'React', 'Tool', 'TTRPG'],
     links: {
@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'Those Who Are About to Spin',
-    description: "Create your roulette and fight gladiators to beat the game. Upgrade your pieces and combine them to make synergies. Don't forget the passives! For each empty slot of your roulette they will boost your units. This game was made in one month.",
+    descriptionKey: 'spin',
     imageUrl: 'https://img.itch.zone/aW1nLzI0MjczNTU5LnBuZw==/300x240%23c/1vRmHy.png',
     tags: ['Game', 'Godot', 'Game Jam', 'Game Off 2025'],
     links: {
@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'Maskness',
-    description: 'You work as a security guard at an illegal party in an industrial park. Allow entry to those wearing the correct masks and get the highest score. This game is made in 48 hours.',
+    descriptionKey: 'maskness',
     imageUrl: 'https://img.itch.zone/aW1nLzI1MzA1ODM2LnBuZw==/315x250%23c/wTKvAw.png',
     tags: ['Game', 'Godot', 'Game Jam', 'MálagaJam 20'],
     links: {
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'Into the Unhearth',
-    description: 'An immersive WebXR survival horror experience built with A-Frame. Manage your flashlight battery and evade a stalking mimic entity while inspecting documents. Playable on VR, PC, and mobile.',
+    descriptionKey: 'unhearth',
     imageUrl: 'https://i.imgur.com/MkU2XNm.png',
     tags: ['Game', 'WebXR', 'A-Frame', 'JavaScript'],
     links: {
