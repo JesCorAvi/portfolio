@@ -42,7 +42,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Into the Unhearth',
     description: 'An immersive WebXR survival horror experience built with A-Frame. Manage your flashlight battery and evade a stalking mimic entity while inspecting documents. Playable on VR, PC, and mobile.',
-    imageUrl: 'components/intotheunhearth.png',
+    imageUrl: 'portfolio/components/intotheunhearth.png',
     tags: ['Game', 'WebXR', 'A-Frame', 'JavaScript'],
     links: {
       github: 'https://github.com/JesCorAvi/Into-the-Unhearth',
