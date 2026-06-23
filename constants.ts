@@ -1,4 +1,3 @@
-
 import type { Project } from './types';
 
 export const EMAIL = 'jesuscorderoavila1@gmail.com';
@@ -40,6 +39,16 @@ export const PROJECTS: Project[] = [
       youtube: 'https://www.youtube.com/watch?v=oWFQrDsZFQs',
     },
   },
+  {
+    title: 'Into the Unhearth',
+    description: 'An immersive WebXR survival horror experience built with A-Frame. Manage your flashlight battery and evade a stalking mimic entity while inspecting documents. Playable on VR, PC, and mobile.',
+    imageUrl: 'components/intotheunhearth.png',
+    tags: ['Game', 'WebXR', 'A-Frame', 'JavaScript'],
+    links: {
+      github: 'https://github.com/JesCorAvi/Into-the-Unhearth',
+      live: 'https://jescoravi.github.io/Into-the-Unhearth/',
+    },
+  }
 ];
 
 export const SOCIAL_LINKS = {

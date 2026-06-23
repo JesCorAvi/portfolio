@@ -12,7 +12,7 @@ I am an aspiring **Game Developer and Web Developer** passionate about creating 
 
 ### 🛠️ Tech Stack
 * **Frontend:** React 19, TypeScript, Tailwind CSS, Vite.
-* **Game Dev:** Unity (C#), Godot.
+* **Game Dev:** Unity (C#), Godot, A-Frame (WebXR).
 * **Languages:** Spanish, English.
 * **Others:** PHP, JavaScript, Git, Figma.
 
@@ -20,6 +20,7 @@ I am an aspiring **Game Developer and Web Developer** passionate about creating 
 * **Cthulhu 7th Ed. Character Creator:** Web tool for managing Call of Cthulhu RPG characters.
 * **Those Who Are About to Spin:** A game developed in one month for "Game Off 2024" using Unity.
 * **Maskness:** Arcade game created in 48 hours during "MálagaJam 20".
+* **Into the Unhearth:** Immersive WebXR survival horror experience built with A-Frame and JavaScript.
 
 ### 🔧 Installation
 1. `git clone https://github.com/JesCorAvi/portfolio-personal.git`
@@ -36,7 +37,7 @@ Soy un aspirante a **Desarrollador de Videojuegos y Desarrollador Web** apasiona
 
 ### 🛠️ Tecnologías
 * **Frontend:** React 19, TypeScript, Tailwind CSS, Vite.
-* **Videojuegos:** Unity (C#), Godot.
+* **Videojuegos:** Unity (C#), Godot, A-Frame (WebXR).
 * **Idiomas:** Español, Inglés.
 * **Otros:** PHP, JavaScript, Git, Figma.
 
@@ -44,6 +45,7 @@ Soy un aspirante a **Desarrollador de Videojuegos y Desarrollador Web** apasiona
 * **Cthulhu 7th Ed. Character Creator:** Herramienta web para gestionar personajes de Call of Cthulhu RPG.
 * **Those Who Are About to Spin:** Juego desarrollado en un mes para la "Game Off 2024" usando Unity.
 * **Maskness:** Juego arcade creado en 48 horas durante la "MálagaJam 20".
+* **Into the Unhearth:** Experiencia inmersiva de terror y supervivencia en WebXR construida con A-Frame y JavaScript.
 
 ### 🔧 Instalación
 1. `git clone https://github.com/JesCorAvi/portfolio-personal.git`
