@@ -9,6 +9,16 @@ export const SKILLS = [
 
 export const PROJECTS: Project[] = [
   {
+    title: 'Sandwish Studio',
+    descriptionKey: 'sandwishStudio',
+    // Cambiamos el enlace externo por el nombre del archivo local
+    imageUrl: 'https://i.imgur.com/IbobDVx.png', 
+    tags: ['Web', 'Studio', 'Frontend'],
+    links: {
+      live: 'https://sandwish-studio.vercel.app/',
+    },
+  },
+  {
     title: 'Cthulhu Character Creator',
     descriptionKey: 'cthulhu',
     imageUrl: 'https://i.imgur.com/mLeyJo9.png',
