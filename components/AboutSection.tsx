@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { SKILL_CATEGORIES } from '../constants';
 import { translations } from '../lib/i18n';
 import type { Language } from '../App';
+import { BookOpen, Car } from 'lucide-react'; // <-- Importamos los iconos nuevos
 
 interface AboutSectionProps { language: Language; }
 
@@ -30,13 +31,15 @@ const AboutSection: React.FC<AboutSectionProps> = ({ language }) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
-          {/* COLUMNA IZQUIERDA: Aptitudes (Skills) */}
+          {/* COLUMNA IZQUIERDA: Aptitudes (Skills) y Certificaciones */}
           <div className="lg:col-span-5 space-y-8">
             <div className={`reveal ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: '100ms' }}>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
                 {t.skillsTitle}
               </h3>
               <div className="space-y-4">
+                
+                {/* Mapeo de tus Skills técnicas */}
                 {SKILL_CATEGORIES.map((category, idx) => (
                   <div key={idx} className="glass-panel p-6 rounded-2xl group hover:border-blue-500/30 transition-colors">
                     <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
@@ -51,6 +54,47 @@ const AboutSection: React.FC<AboutSectionProps> = ({ language }) => {
                     </div>
                   </div>
                 ))}
+
+                {/* NUEVO: Panel de Certificaciones y Otros */}
+                <div className="glass-panel p-6 rounded-2xl group hover:border-blue-500/30 transition-colors">
+                  <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-5">
+                    {language === 'en' ? 'Certifications & Others' : 'Certificaciones y Otros'}
+                  </h4>
+                  
+                  <div className="space-y-4">
+                    {/* B2 Inglés */}
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 flex items-center justify-center text-blue-600 dark:text-blue-400 shrink-0">
+                        <BookOpen className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold text-slate-900 dark:text-white">
+                          {language === 'en' ? 'English B2 First (FCE)' : 'Inglés B2 First (FCE)'}
+                        </p>
+                        <p className="text-xs text-slate-500 dark:text-slate-400">
+                          Cambridge Assessment English
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Carnet de Conducir */}
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-cyan-50 dark:bg-cyan-900/20 border border-cyan-100 dark:border-cyan-800 flex items-center justify-center text-cyan-600 dark:text-cyan-400 shrink-0">
+                        <Car className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold text-slate-900 dark:text-white">
+                          {language === 'en' ? 'Driving License (Class B)' : 'Carnet de Conducir (B)'}
+                        </p>
+                        <p className="text-xs text-slate-500 dark:text-slate-400">
+                          {language === 'en' ? 'Vehicle available' : 'Vehículo propio'}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
               </div>
             </div>
           </div>
