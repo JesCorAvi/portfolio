@@ -8,12 +8,27 @@ export const translations = {
     },
     about: {
       title: 'About Me',
-      description: `Hi there! I’m an aspiring game developer and a web developer exploring the world of interactive experiences.
+      profileTitle: 'Profile',
+      description: `Hi there! I am a Web, Video Game, and VR Experiences Developer. I consider myself a professional eager to learn and constantly progress.
 
-I’m passionate about creating experimental and innovative gameplay experiences that blend storytelling, design, and technology. Most of my work so far focuses on exploring new ways for players to interact, feel, and think through games.
-
-As a web developer, I love clean design, intuitive interfaces, and seeing ideas come to life through code. Now, I’m learning how to apply those same principles to game development.`,
-      skillsIntro: `Feel free to try my projects, leave feedback, or just say hi!`,
+I have practical experience in Full Stack development, working on projects with React, Laravel, and .NET MVC. Additionally, I have participated in developing applications integrating technologies like JavaScript, PHP, and Ionic.`,
+      skillsIntro: `My main technologies and skills:`,
+      trajectoryTitle: "Professional Trajectory",
+      trajectorySubtitle: "Junior Full Stack Developer",
+      trajectoryCompany: "ControlNet | Jerez de la Frontera, Spain",
+      trajectoryDate: "March 2024 - June 2024 (4 months)",
+      trajectoryDesc: "Worked on multiple web application projects using .NET MVC and ASP.NET Core. Participated in minor projects using JavaScript, PHP, and Ionic with React.",
+      educationTitle: "Education & Certifications",
+      edu1Title: "Specialization in Video Game Development and VR",
+      edu1School: "I.E.S Rafael Alberti",
+      edu1Date: "Sept 2025 - Jun 2026",
+      edu1Desc: "Focusing on creating VR experiences in Unity and designing interactive experiences and Serious Games.",
+      edu2Title: "Higher Degree in Web Application Development (DAW)",
+      edu2School: "I.E.S Doñana",
+      edu2Date: "Sept 2021 - Jun 2024",
+      otherTitles: "Other Certifications",
+      certEnglish: "B2 English Certification (Cambridge)",
+      license: "B Driving License"
     },
     projects: {
       title: 'My Projects',
@@ -40,12 +55,27 @@ As a web developer, I love clean design, intuitive interfaces, and seeing ideas 
     },
     about: {
       title: 'Sobre Mí',
-      description: `¡Hola! Soy un aspirante a desarrollador de videojuegos y desarrollador web que explora el mundo de las experiencias interactivas.
+      profileTitle: 'Perfil',
+      description: `¡Hola! Soy Desarrollador Web, de Videojuegos y Experiencias VR. Me considero un profesional con muchas ganas de aprender y progresar.
 
-Me apasiona crear experiencias de juego experimentales e innovadoras que combinan narrativa, diseño y tecnología. La mayor parte de mi trabajo hasta ahora se centra en explorar nuevas formas para que los jugadores interactúen, sientan y piensen a través de los juegos.
-
-Como desarrollador web, me encanta el diseño limpio, las interfaces intuitivas y ver cómo las ideas cobran vida a través del código. Ahora, estoy aprendiendo a aplicar esos mismos principios al desarrollo de videojuegos.`,
-      skillsIntro: '¡No dudes en probar mis proyectos, dejar tus comentarios o simplemente saludar!',
+Tengo experiencia en el desarrollo Full Stack, trabajando en proyectos con React, Laravel y .NET MVC. Además, he participado en proyectos menores utilizando JavaScript, PHP e Ionic con React.`,
+      skillsIntro: 'Mis principales aptitudes y conocimientos:',
+      trajectoryTitle: "Trayectoria Profesional",
+      trajectorySubtitle: "Desarrollador Full Stack Junior",
+      trajectoryCompany: "ControlNet | Jerez de la Frontera, Andalucía",
+      trajectoryDate: "Marzo 2024 - Junio 2024 (4 meses)",
+      trajectoryDesc: "Desempeñé proyectos como desarrollador web principalmente en múltiples aplicaciones web con .NET MVC y ASP.NET Core. También participé en proyectos menores de JavaScript, PHP e Ionic con React.",
+      educationTitle: "Educación y Formación",
+      edu1Title: "Curso de Especialización en Desarrollo de Videojuegos y Realidad Virtual",
+      edu1School: "I.E.S Rafael Alberti",
+      edu1Date: "Septiembre 2025 - Junio 2026",
+      edu1Desc: "Formación enfocada en la creación de experiencias VR en Unity y el diseño de experiencias interactivas y Serious Games con fines educativos o formativos.",
+      edu2Title: "Ciclo Superior en Desarrollo de Aplicaciones Web (DAW)",
+      edu2School: "I.E.S Doñana",
+      edu2Date: "Septiembre 2021 - Junio 2024",
+      otherTitles: "Titulaciones Secundarias",
+      certEnglish: "Certificación Inglés B2 por Cambridge",
+      license: "Carnet de conducir B"
     },
     projects: {
       title: 'Mis Proyectos',
