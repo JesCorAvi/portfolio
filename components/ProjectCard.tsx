@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, language }) =
   return (
     <article
       ref={cardRef}
-      className={`group glass-panel rounded-2xl overflow-hidden flex flex-col transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:border-blue-500/40 dark:hover:border-cyan-400/40 hover:-translate-y-1.5 reveal ${
+      className={`h-full w-full group glass-panel rounded-2xl overflow-hidden flex flex-col transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:border-blue-500/40 dark:hover:border-cyan-400/40 hover:-translate-y-1.5 reveal ${
         isVisible ? 'visible' : ''
       }`}
       style={{ transitionDelay: `${(index % 4) * 100}ms` }}

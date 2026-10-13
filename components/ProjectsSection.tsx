@@ -57,15 +57,19 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ language }) => {
           </div>
         </div>
 
-        {/* Grid de proyectos con proporción óptima */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Contenedor de proyectos con centrado automático del último impar */}
+        <div className="flex flex-wrap justify-center gap-8">
           {filteredProjects.map((project, index) => (
-            <ProjectCard
+            <div
               key={project.title}
-              project={project}
-              index={index}
-              language={language}
-            />
+              className="w-full md:w-[calc(50%-1rem)] flex"
+            >
+              <ProjectCard
+                project={project}
+                index={index}
+                language={language}
+              />
+            </div>
           ))}
         </div>
       </div>
