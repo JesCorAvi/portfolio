@@ -8,12 +8,13 @@ interface ThemeSwitcherProps {
 
 const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ theme, toggleTheme }) => {
   return (
-        <button 
-      onClick={toggleTheme} 
-      className="text-sm font-bold text-text-secondary-light dark:text-text-secondary hover:text-accent-light dark:hover:text-accent transition-colors uppercase"
-      aria-label="Change theme"
+    <button
+      onClick={toggleTheme}
+      className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-slate-200/60 dark:hover:bg-slate-800/60 transition-colors"
+      aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
+      title={theme === 'light' ? 'Modo oscuro' : 'Modo claro'}
     >
-      {theme === 'light' ? <Moon className="w-6 h-6" /> : <Sun className="w-6 h-6" />}
+      {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
     </button>
   );
 };

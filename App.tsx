@@ -12,12 +12,12 @@ const getInitialLanguage = (): Language => {
   if (typeof window !== 'undefined' && window.localStorage) {
     const storedLang = window.localStorage.getItem('language');
     if (storedLang === 'en' || storedLang === 'es') {
-      return storedLang as Language;
+      return storedLang;
     }
   }
 
   if (typeof navigator !== 'undefined') {
-    const userLanguages = navigator.languages || [navigator.language || (navigator as any).userLanguage || ''];
+    const userLanguages = navigator.languages || [navigator.language || ''];
     for (const lang of userLanguages) {
       if (!lang) continue;
       const lowerLang = lang.toLowerCase();
@@ -26,7 +26,7 @@ const getInitialLanguage = (): Language => {
     }
   }
 
-  return 'en';
+  return 'es';
 };
 
 export type Theme = 'light' | 'dark';
@@ -34,8 +34,8 @@ export type Theme = 'light' | 'dark';
 const getInitialTheme = (): Theme => {
   if (typeof window !== 'undefined' && window.localStorage) {
     const storedPrefs = window.localStorage.getItem('theme');
-    if (typeof storedPrefs === 'string') {
-      return storedPrefs as Theme;
+    if (storedPrefs === 'light' || storedPrefs === 'dark') {
+      return storedPrefs;
     }
 
     const userMedia = window.matchMedia('(prefers-color-scheme: dark)');
@@ -43,38 +43,31 @@ const getInitialTheme = (): Theme => {
       return 'dark';
     }
   }
-  return 'light';
+  return 'dark';
 };
 
 const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>(getInitialLanguage());
   const [theme, setTheme] = useState<Theme>(getInitialTheme());
-  
-  // Nuevo estado para controlar la animación
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const toggleLanguage = () => {
-    // Si ya está en medio de una animación, ignoramos el clic para evitar parpadeos
     if (isTransitioning) return;
-    
-    // 1. Iniciamos el desvanecimiento (fade out)
     setIsTransitioning(true);
-    
-    // 2. Esperamos a que la opacidad baje antes de cambiar el texto
+
     setTimeout(() => {
-      setLanguage(prevLang => prevLang === 'en' ? 'es' : 'en');
-      
-      // 3. Volvemos a mostrar el contenido (fade in)
+      setLanguage((prevLang) => (prevLang === 'en' ? 'es' : 'en'));
       setIsTransitioning(false);
-    }, 300); // 300ms coincide con la clase duration-300 de Tailwind
+    }, 220);
   };
 
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
   useEffect(() => {
     localStorage.setItem('language', language);
+    document.documentElement.lang = language;
   }, [language]);
 
   useEffect(() => {
@@ -85,22 +78,26 @@ const App: React.FC = () => {
   }, [theme]);
 
   return (
-    <div className="bg-primary-light dark:bg-primary text-text-primary-light dark:text-text-primary font-sans min-h-screen flex flex-col">
-      <Header language={language} toggleLanguage={toggleLanguage} theme={theme} toggleTheme={toggleTheme} />
-      
-      {/* Contenedor que aplica la transición de opacidad */}
-      <div 
-        className={`flex-grow transition-opacity duration-300 ease-in-out ${
+    <div className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white transition-colors duration-300">
+      <Header
+        language={language}
+        toggleLanguage={toggleLanguage}
+        theme={theme}
+        toggleTheme={toggleTheme}
+      />
+
+      <div
+        className={`flex-grow flex flex-col transition-opacity duration-200 ease-in-out ${
           isTransitioning ? 'opacity-0' : 'opacity-100'
         }`}
       >
-        <main className="max-w-5xl mx-auto px-6 py-8">
+        <main className="flex-grow">
           <Hero language={language} />
           <AboutSection language={language} />
           <ProjectsSection language={language} />
           <ContactSection language={language} />
         </main>
-        <Footer />
+        <Footer language={language} />
       </div>
     </div>
   );

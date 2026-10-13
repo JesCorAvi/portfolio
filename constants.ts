@@ -5,58 +5,81 @@ export const EMAIL = 'jesuscorderoavila1@gmail.com';
 export const SKILL_CATEGORIES = [
   {
     titleKey: 'catFrontend',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Ionic']
+    skills: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Ionic']
   },
   {
     titleKey: 'catBackend',
-    skills: ['PHP', 'Laravel', 'ASP.NET', '.NET Core', 'C#']
+    skills: ['C#', 'ASP.NET Core', '.NET MVC', 'PHP', 'Laravel', 'REST APIs', 'Git']
   },
   {
     titleKey: 'catGames',
-    skills: ['Unity', 'Realidad Virtual (VR)', 'Serious Games']
+    skills: ['Unity', 'Godot Engine', 'Realidad Virtual (VR)', 'WebXR / A-Frame', 'Serious Games']
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Sandwish Studio',
-    descriptionKey: 'sandwishStudio',
-    imageUrl: 'https://i.imgur.com/IbobDVx.png', 
-    tags: ['Web', 'Studio', 'Frontend'],
-    links: { live: 'https://sandwish-studio.vercel.app/' },
-  },
-  {
     title: 'Cthulhu Character Creator',
     descriptionKey: 'cthulhu',
     imageUrl: 'https://i.imgur.com/mLeyJo9.png',
-    tags: ['Web App', 'React', 'Tool', 'TTRPG'],
-    links: { github: 'https://github.com/JesCorAvi/Cthulhu-7e-character-creator', live: 'https://cthulhubuilder.pages.dev/' },
+    category: 'web',
+    featured: true,
+    tags: ['React', 'Web App', 'Tool', 'TTRPG'],
+    links: {
+      github: 'https://github.com/JesCorAvi/Cthulhu-7e-character-creator',
+      live: 'https://cthulhubuilder.pages.dev/'
+    },
   },
   {
-    title: 'Those Who Are About to Spin',
-    descriptionKey: 'spin',
-    imageUrl: 'https://img.itch.zone/aW1nLzI0MjczNTU5LnBuZw==/300x240%23c/1vRmHy.png',
-    tags: ['Game', 'Godot', 'Game Jam'],
-    links: { github: 'https://github.com/IES-Rafael-Alberti/GameOff2025-SandwishStudio', itchio: 'https://sandwish-studio.itch.io/those-who-are-about-to-spin' },
-  },
-  {
-    title: 'Maskness',
-    descriptionKey: 'maskness',
-    imageUrl: 'https://img.itch.zone/aW1nLzI1MzA1ODM2LnBuZw==/315x250%23c/wTKvAw.png',
-    tags: ['Game', 'Godot', 'MálagaJam 20'],
-    links: { github: 'https://github.com/IES-Rafael-Alberti/Juego-MalagaJam-20-SandWishStudios', itchio: 'https://sandwish-studio.itch.io/maskness', youtube: 'https://www.youtube.com/watch?v=oWFQrDsZFQs' },
+    title: 'Sandwish Studio',
+    descriptionKey: 'sandwishStudio',
+    imageUrl: 'https://i.imgur.com/IbobDVx.png',
+    category: 'web',
+    featured: true,
+    tags: ['Web', 'Indie Studio', 'Frontend'],
+    links: {
+      live: 'https://sandwish-studio.vercel.app/'
+    },
   },
   {
     title: 'Into the Unhearth',
     descriptionKey: 'unhearth',
     imageUrl: 'https://i.imgur.com/MkU2XNm.png',
-    tags: ['Game', 'WebXR', 'A-Frame', 'JS'],
-    links: { github: 'https://github.com/JesCorAvi/Into-the-Unhearth', live: 'https://jescoravi.github.io/Into-the-Unhearth/' },
+    category: 'game',
+    featured: true,
+    tags: ['WebXR', 'A-Frame', 'JavaScript', 'VR Horror'],
+    links: {
+      github: 'https://github.com/JesCorAvi/Into-the-Unhearth',
+      live: 'https://jescoravi.github.io/Into-the-Unhearth/'
+    },
+  },
+  {
+    title: 'Those Who Are About to Spin',
+    descriptionKey: 'spin',
+    imageUrl: 'https://img.itch.zone/aW1nLzI0MjczNTU5LnBuZw==/300x240%23c/1vRmHy.png',
+    category: 'game',
+    tags: ['Godot', 'Strategy', 'Game Off Jam'],
+    links: {
+      github: 'https://github.com/IES-Rafael-Alberti/GameOff2025-SandwishStudio',
+      itchio: 'https://sandwish-studio.itch.io/those-who-are-about-to-spin'
+    },
+  },
+  {
+    title: 'Maskness',
+    descriptionKey: 'maskness',
+    imageUrl: 'https://img.itch.zone/aW1nLzI1MzA1ODM2LnBuZw==/315x250%23c/wTKvAw.png',
+    category: 'game',
+    tags: ['Godot', 'Arcade', 'MálagaJam 20 (48h)'],
+    links: {
+      github: 'https://github.com/IES-Rafael-Alberti/Juego-MalagaJam-20-SandWishStudios',
+      itchio: 'https://sandwish-studio.itch.io/maskness',
+      youtube: 'https://www.youtube.com/watch?v=oWFQrDsZFQs'
+    },
   }
 ];
 
 export const SOCIAL_LINKS = {
-    linkedin: 'https://www.linkedin.com/in/jes%C3%BAs-cordero-%C3%A1vila-574a372b5/',
-    github: 'https://github.com/JesCorAvi',
-    itchio: 'https://jescoravi.itch.io/',
+  linkedin: 'https://www.linkedin.com/in/jes%C3%BAs-cordero-%C3%A1vila-574a372b5/',
+  github: 'https://github.com/JesCorAvi',
+  itchio: 'https://jescoravi.itch.io/',
 };

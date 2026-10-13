@@ -1,116 +1,196 @@
 export const translations = {
   en: {
+    nav: {
+      about: 'About',
+      projects: 'Projects',
+      contact: 'Contact',
+      openMenu: 'Open navigation menu',
+      closeMenu: 'Close navigation menu',
+    },
     hero: {
-      subtitle: 'Web & Game Developer',
-      description: 'Passionate about crafting immersive games and building useful applications. From game jams to web tools, I love bringing creative ideas to life with code.',
-      viewWork: 'View My Work',
-      connect: 'Connect on LinkedIn'
+      badge: 'Available for Web & VR/Game Dev opportunities',
+      subtitle: 'Full Stack Web & Game / VR Developer',
+      description:
+        'Passionate about crafting immersive games, VR experiences, and building solid web applications. From 48-hour game jams to production web tools with React and .NET, I turn ideas into polished interactive products.',
+      viewWork: 'Explore Projects',
+      connect: 'Connect on LinkedIn',
+      contactBtn: 'Contact Me'
     },
     about: {
       title: 'About Me',
-      profileTitle: 'Profile',
-      description: `Hi there! I am a Web, Video Game, and VR Experiences Developer. I consider myself a professional eager to learn and constantly progress.
+      subtitle: 'Combining software architecture with interactive entertainment',
+      profileTitle: 'Professional Profile',
+      description: `Hi there! I am a Web, Video Game, and VR Experiences Developer focused on continuous learning and clean implementation.
 
-I have practical experience in Full Stack development, working on projects with React, Laravel, and .NET MVC. Additionally, I have participated in developing applications integrating technologies like JavaScript, PHP, and Ionic.`,
-      skillsIntro: `My main technologies and skills:`,
-      skillsTitle: 'My Skills',
+I have practical experience in Full Stack development building web applications with React, Laravel, and .NET MVC / ASP.NET Core, as well as designing interactive 3D/VR experiences and video games in Unity, Godot, and WebXR.`,
+      skillsIntro: 'My main technologies and skills:',
+      skillsTitle: 'Technical Stack',
       catFrontend: 'Frontend & Mobile',
-      catBackend: 'Backend & Frameworks',
+      catBackend: 'Backend & Architecture',
       catGames: 'Video Games & VR',
-      trajectorySectionTitle: 'Professional Trajectory',
-      trajectoryTitle: 'Experience',
+      trajectorySectionTitle: 'Experience & Education',
+      trajectoryTitle: 'Work Experience',
       trajectorySubtitle: 'Junior Full Stack Developer',
       trajectoryCompany: 'ControlNet | Jerez de la Frontera, Spain',
       trajectoryDate: 'March 2024 - June 2024 (4 months)',
-      trajectoryDesc: 'Worked on multiple web application projects using .NET MVC and ASP.NET Core. Participated in minor projects using JavaScript, PHP, and Ionic with React.',
+      trajectoryDesc:
+        'Developed and maintained multiple enterprise web applications using .NET MVC and ASP.NET Core. Collaborated on cross-platform and frontend modules integrating JavaScript, PHP, and Ionic with React.',
       educationTitle: 'Education & Certifications',
-      edu1Title: 'Specialization in Video Game Development and VR',
-      edu1School: 'I.E.S Rafael Alberti',
+      edu1Title: 'Master Specialization in Video Game Development & VR',
+      edu1School: 'I.E.S. Rafael Alberti',
       edu1Date: 'Sept 2025 - Jun 2026',
-      edu1Desc: 'Focusing on creating VR experiences in Unity and designing interactive experiences and Serious Games.',
+      edu1Desc:
+        'Specialized training in virtual reality experiences with Unity, interactive system design, and Serious Games for educational and training purposes.',
       edu2Title: 'Higher Degree in Web Application Development (DAW)',
-      edu2School: 'I.E.S Doñana',
+      edu2School: 'I.E.S. Doñana',
       edu2Date: 'Sept 2021 - Jun 2024',
-      otherTitles: 'Other Certifications',
-      certEnglish: 'B2 English Certification (Cambridge)',
-      license: 'B Driving License'
+      edu2Desc:
+        'Full Stack web engineering fundamentals, relational databases, server-side architecture, and responsive frontend interfaces.',
+      otherTitles: 'Certifications & Additional Info',
+      certEnglish: 'English B2 First (FCE)',
+      certEnglishIssuer: 'Cambridge Assessment English',
+      license: 'Driving License (Class B)',
+      licenseDesc: 'Own vehicle available'
     },
     projects: {
-      title: 'My Projects',
-      visit: 'Visit',
-      githubAria: 'GitHub Repository',
-      liveAria: 'View Live Project',
-      itchioAria: 'itch.io Page',
-      youtubeAria: 'YouTube Video',
+      title: 'Featured Projects',
+      subtitle: 'A selection of web applications, interactive tools, and games built solo and in teams.',
+      filterAll: 'All Projects',
+      filterWeb: 'Web & Apps',
+      filterGames: 'Games & VR',
+      visit: 'Live Demo',
+      playItch: 'Play on itch.io',
+      watchVideo: 'Gameplay',
+      code: 'Code',
+      githubAria: 'View source code on GitHub',
+      liveAria: 'Open live project',
+      itchioAria: 'Open game page on itch.io',
+      youtubeAria: 'Watch gameplay video on YouTube',
+      categoryWeb: 'Web App',
+      categoryGame: 'Game / VR',
       items: {
-        sandwishStudio: 'Official website of the independent development studio Sandwish Studio. I am part of this team as a programmer.',
-        cthulhu: 'A web-based tool to easily create and manage characters for the Cthulhu tabletop RPG.',
-        spin: "Create your roulette and fight gladiators to beat the game. Upgrade your pieces and combine them to make synergies. Don't forget the passives! For each empty slot of your roulette they will boost your units. This game was made in one month.",
-        maskness: 'You work as a security guard at an illegal party in an industrial park. Allow entry to those wearing the correct masks and get the highest score. This game is made in 48 hours.',
-        unhearth: 'An immersive WebXR survival horror experience built with A-Frame. Manage your flashlight battery and evade a stalking mimic entity while inspecting documents. Playable on VR, PC, and mobile.'
+        sandwishStudio:
+          'Official website of the independent game development studio Sandwish Studio, where I work as a core programmer. Designed for fast performance and strong brand identity.',
+        cthulhu:
+          'Interactive web application to create, calculate, and manage investigator sheets for the Call of Cthulhu 7th Edition tabletop RPG.',
+        spin:
+          'Roulette-building tactical roguelike where you fight gladiators, upgrade tokens, and unlock slot synergies. Built in 1 month with Godot for GitHub Game Off.',
+        maskness:
+          'Fast-paced arcade inspection game where you work as a bouncer at an underground party verifying guests’ masks. Created in 48 hours for MálagaJam 20.',
+        unhearth:
+          'Immersive WebXR survival horror experience built with A-Frame. Manage your flashlight battery and evade a stalking mimic entity while inspecting documents across VR, PC, and mobile.'
       }
     },
     contact: {
-      title: 'Get In Touch',
-      description: 'I\'m always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. Feel free to reach out!',
-      button: 'Say Hello',
+      title: 'Let’s Work Together',
+      subtitle: 'Looking for a versatile developer for your web team or game studio?',
+      description:
+        'I am currently open to Junior Full Stack, Frontend, or Unity/Godot Game & VR Developer roles, as well as ambitious freelance collaborations. Feel free to reach out directly!',
+      button: 'Send Email',
+      copyEmail: 'Copy Email',
+      copied: 'Email copied!',
+      linkedinCta: 'Message on LinkedIn'
+    },
+    footer: {
+      rights: 'All rights reserved.',
+      builtWith: 'Designed & built with React, TypeScript & Tailwind CSS.'
     }
   },
   es: {
+    nav: {
+      about: 'Sobre Mí',
+      projects: 'Proyectos',
+      contact: 'Contacto',
+      openMenu: 'Abrir menú de navegación',
+      closeMenu: 'Cerrar menú de navegación',
+    },
     hero: {
-      subtitle: 'Desarrollador Web y de Videojuegos',
-      description: 'Apasionado por crear juegos inmersivos y construir aplicaciones útiles. Desde game jams hasta herramientas web, me encanta dar vida a ideas creativas con código.',
-      viewWork: 'Ver Mis Proyectos',
-      connect: 'Conectar en LinkedIn'
+      badge: 'Disponible para oportunidades en Desarrollo Web, Juegos y VR',
+      subtitle: 'Desarrollador Web Full Stack, Videojuegos y VR',
+      description:
+        'Apasionado por crear experiencias inmersivas, videojuegos y aplicaciones web sólidas. Desde game jams de 48 horas hasta aplicaciones con React y .NET, transformo ideas creativas en productos interactivos.',
+      viewWork: 'Ver Proyectos',
+      connect: 'LinkedIn',
+      contactBtn: 'Contactar'
     },
     about: {
       title: 'Sobre Mí',
-      profileTitle: 'Perfil',
-      description: `¡Hola! Soy Desarrollador Web, de Videojuegos y Experiencias VR. Me considero un profesional con muchas ganas de aprender y progresar.
+      subtitle: 'Uniendo la ingeniería de software web con el entretenimiento interactivo',
+      profileTitle: 'Perfil Profesional',
+      description: `¡Hola! Soy Desarrollador Web, de Videojuegos y Experiencias VR. Me considero un profesional resolutivo, con gran capacidad de adaptación y aprendizaje continuo.
 
-Tengo experiencia en el desarrollo Full Stack, trabajando en proyectos con React, Laravel y .NET MVC. Además, he participado en proyectos menores utilizando JavaScript, PHP e Ionic con React.`,
-      skillsIntro: 'Mis principales aptitudes y conocimientos:',
-      skillsTitle: 'Mis Aptitudes',
+Cuento con experiencia práctica en desarrollo Full Stack trabajando con React, Laravel y .NET MVC / ASP.NET Core, además de desarrollar videojuegos y experiencias interactivas en 3D y Realidad Virtual con Unity, Godot y WebXR.`,
+      skillsIntro: 'Mis principales aptitudes y tecnologías:',
+      skillsTitle: 'Stack Tecnológico',
       catFrontend: 'Frontend y Móvil',
-      catBackend: 'Backend y Frameworks',
+      catBackend: 'Backend y Arquitectura',
       catGames: 'Videojuegos y VR',
-      trajectorySectionTitle: 'Trayectoria',
-      trajectoryTitle: 'Experiencia',
+      trajectorySectionTitle: 'Experiencia y Formación',
+      trajectoryTitle: 'Experiencia Profesional',
       trajectorySubtitle: 'Desarrollador Full Stack Junior',
       trajectoryCompany: 'ControlNet | Jerez de la Frontera, Andalucía',
       trajectoryDate: 'Marzo 2024 - Junio 2024 (4 meses)',
-      trajectoryDesc: 'Desempeñé proyectos como desarrollador web principalmente en múltiples aplicaciones web con .NET MVC y ASP.NET Core. También participé en proyectos menores de JavaScript, PHP e Ionic con React.',
+      trajectoryDesc:
+        'Desarrollo y mantenimiento de múltiples aplicaciones web empresariales utilizando .NET MVC y ASP.NET Core. Participación activa en módulos con JavaScript, PHP e Ionic con React.',
       educationTitle: 'Educación y Formación',
       edu1Title: 'Curso de Especialización en Desarrollo de Videojuegos y VR',
-      edu1School: 'I.E.S Rafael Alberti',
+      edu1School: 'I.E.S. Rafael Alberti',
       edu1Date: 'Septiembre 2025 - Junio 2026',
-      edu1Desc: 'Formación enfocada en la creación de experiencias VR en Unity y el diseño de experiencias interactivas y Serious Games con fines educativos o formativos.',
+      edu1Desc:
+        'Formación especializada en la creación de experiencias de Realidad Virtual en Unity, programación de mecánicas interactivas y diseño de Serious Games con fines educativos y formativos.',
       edu2Title: 'Ciclo Superior en Desarrollo de Aplicaciones Web (DAW)',
-      edu2School: 'I.E.S Doñana',
+      edu2School: 'I.E.S. Doñana',
       edu2Date: 'Septiembre 2021 - Junio 2024',
-      otherTitles: 'Titulaciones Secundarias',
-      certEnglish: 'Certificación Inglés B2 por Cambridge',
-      license: 'Carnet de conducir B'
+      edu2Desc:
+        'Arquitectura de aplicaciones web Full Stack, diseño de bases de datos relacionales, desarrollo backend y creación de interfaces frontend modernas.',
+      otherTitles: 'Certificaciones y Datos Adicionales',
+      certEnglish: 'Inglés B2 First (FCE)',
+      certEnglishIssuer: 'Cambridge Assessment English',
+      license: 'Carnet de Conducir (Clase B)',
+      licenseDesc: 'Vehículo propio y disponibilidad'
     },
     projects: {
-      title: 'Mis Proyectos',
-      visit: 'Visitar',
-      githubAria: 'Repositorio de GitHub',
-      liveAria: 'Ver Proyecto',
-      itchioAria: 'Página de itch.io',
-      youtubeAria: 'Video en YouTube',
+      title: 'Proyectos Destacados',
+      subtitle: 'Una selección de aplicaciones web, herramientas interactivas y videojuegos desarrollados individualmente y en equipo.',
+      filterAll: 'Todos',
+      filterWeb: 'Web y Apps',
+      filterGames: 'Juegos y VR',
+      visit: 'Ver Demo',
+      playItch: 'Jugar en itch.io',
+      watchVideo: 'Gameplay',
+      code: 'Código',
+      githubAria: 'Ver código fuente en GitHub',
+      liveAria: 'Abrir proyecto desplegado',
+      itchioAria: 'Abrir página del juego en itch.io',
+      youtubeAria: 'Ver vídeo de gameplay en YouTube',
+      categoryWeb: 'Aplicación Web',
+      categoryGame: 'Videojuego / VR',
       items: {
-        sandwishStudio: 'Página web oficial del estudio de desarrollo independiente Sandwish Studio. En este equipo formo parte como programador.',
-        cthulhu: 'Una herramienta web para crear y gestionar fácilmente personajes para el juego de rol de mesa de Cthulhu.',
-        spin: "Crea tu ruleta y lucha contra gladiadores para superar el juego. Mejora tus piezas y combínalas para crear sinergias. ¡No olvides las habilidades pasivas! Por cada espacio vacío en tu ruleta, mejorarán a tus unidades. Este juego fue creado en un mes.",
-        maskness: 'Trabajas como guardia de seguridad en una fiesta ilegal en un polígono industrial. Permite la entrada a quienes lleven las máscaras correctas y obtén la puntuación más alta. Este juego fue creado en 48 horas.',
-        unhearth: 'Una experiencia inmersiva de survival horror en WebXR construida con A-Frame. Gestiona la batería de tu linterna y evade a una entidad mimética que te acecha mientras inspeccionas documentos. Jugable en VR, PC y móvil.'
+        sandwishStudio:
+          'Página web oficial del estudio de desarrollo independiente Sandwish Studio, equipo del que formo parte como programador. Diseñada con enfoque en rendimiento e identidad visual.',
+        cthulhu:
+          'Aplicación web interactiva para crear, calcular estadísticas y gestionar fichas de investigadores para el juego de rol La Llamada de Cthulhu (7ª Edición).',
+        spin:
+          'Roguelike táctico de construcción de ruletas donde combates contra gladiadores, mejoras fichas y creas sinergias con huecos vacíos. Desarrollado en 1 mes con Godot.',
+        maskness:
+          'Juego arcade frenético donde trabajas como guardia de seguridad en una fiesta clandestina filtrando asistentes según sus máscaras. Creado en 48 horas para la MálagaJam 20.',
+        unhearth:
+          'Experiencia inmersiva de survival horror en WebXR construida con A-Frame. Gestiona la batería de tu linterna y evade a una entidad mimética mientras inspeccionas documentos en VR, PC o móvil.'
       }
     },
     contact: {
-      title: 'Contacto',
-      description: 'Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para formar parte de una visión ambiciosa. ¡No dudes en contactarme!',
-      button: '¡Saluda!',
+      title: '¿Hablamos?',
+      subtitle: '¿Buscas un desarrollador versátil para tu equipo web o estudio de videojuegos?',
+      description:
+        'Estoy abierto a oportunidades laborales como Desarrollador Full Stack, Frontend o Desarrollador de Videojuegos / VR, así como a nuevos retos técnicos. ¡Escríbeme sin compromiso!',
+      button: 'Enviar Correo',
+      copyEmail: 'Copiar Email',
+      copied: '¡Copiado al portapapeles!',
+      linkedinCta: 'Conectar en LinkedIn'
+    },
+    footer: {
+      rights: 'Todos los derechos reservados.',
+      builtWith: 'Diseñado y desarrollado con React, TypeScript y Tailwind CSS.'
     }
   }
 };
